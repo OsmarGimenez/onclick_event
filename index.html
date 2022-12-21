@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <h2>Dojonary</h2>
+        <input type="search" placeholder="Search">
+
+        <button onclick="logout(this)">Login</button>
+    </header>
+    <!-- Main Section -->
+    <main>
+
+        <!--Column dictionary-->
+        <article>
+            <!--First row-->
+            <section>
+                <div class="content-word">
+                    <h2>ninja</h2>
+                    <h3><em>noun</em></h3>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button class="btn-likes" onclick="like()">13 likes</button>
+                </div>
+                <div class="content-description">
+                    <p>A practitioner skilled in the
+                        <a href="https://en.wikipedia.org/wiki/Japanese_art" target="_blank">Japanese</a>
+                        art of
+                        <a href="https://en.wikipedia.org/wiki/Ninjutsu" target="_blank">ninjutsu</a>
+                    </p>
+                </div>
+            </section>
+
+            <!--Second row-->
+            <section>
+                <div class="content-word">
+                    <h2>ninja</h2>
+                    <h3><em>noun</em></h3>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button class="btn-likes" onclick="like()">37 likes</button>
+                </div>
+                <div class="content-description">
+                    <p>A
+                        <a href="https://en.wikipedia.org/wiki/Programmer" target="_blank">programmer</a>
+                        who breaks down problems with
+                        <a href="https://en.wikipedia.org/wiki/Zen" target="_blank">zen</a>-like focus
+                    </p>
+                </div>
+            </section>
+        </article>
+
+        <!-- Aside -->
+        <aside>
+            <section>
+                <p>Dojonary is <br> defined by <strong>YOU</strong></p>
+                <button id="add-definition" onclick="hide(this)">Add Definition</button>
+            </section>
+        </aside>
+    </main>
+
+    <!--Javascript-->
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
